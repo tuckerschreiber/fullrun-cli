@@ -1,0 +1,22 @@
+{
+  "name": "@fullrun/mcp",
+  "version": "0.1.0",
+  "description": "Fullrun MCP server — Google Ads management for Claude Desktop",
+  "bin": {
+    "fullrun-mcp": "./dist/server.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}
