@@ -5,15 +5,17 @@
   "bin": {
     "fullrun": "./dist/bin/fullrun.js"
   },
-  "files": ["dist", "SKILL.md"],
+  "files": [
+    "dist",
+    "SKILL.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/bin/fullrun.ts",
     "test": "vitest run"
   },
   "dependencies": {
-    "commander": "^13.0.0",
-    "open": "^10.0.0"
+    "commander": "^13.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -21,6 +23,13 @@
     "typescript": "^5",
     "vitest": "^4.0.18"
   },
-  "keywords": ["google-ads", "ppc", "ai-agent", "openclaw", "mcp", "cli"],
+  "keywords": [
+    "google-ads",
+    "ppc",
+    "ai-agent",
+    "openclaw",
+    "mcp",
+    "cli"
+  ],
   "license": "MIT"
 }

@@ -5,7 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 const API_KEY = process.env.FULLRUN_API_KEY;
-const API_URL = process.env.FULLRUN_API_URL || "https://app.fullrun.ai";
+const API_URL = process.env.FULLRUN_API_URL || "https://www.fullrun.app";
 
 if (!API_KEY) {
   console.error("FULLRUN_API_KEY environment variable is required");
