@@ -1,6 +1,6 @@
 {
   "name": "fullrun",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Google Ads management CLI for AI agents",
   "bin": {
     "fullrun": "./dist/bin/fullrun.js"
@@ -31,5 +31,13 @@
     "mcp",
     "cli"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuckerschreiber/fullrun-cli.git"
+  },
+  "homepage": "https://www.fullrun.app/cli",
+  "bugs": {
+    "url": "https://github.com/tuckerschreiber/fullrun-cli/issues"
+  }
 }
