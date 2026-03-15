@@ -1,6 +1,13 @@
-# fullrun
+<p align="center">
+  <img src="logo.svg" alt="Fullrun" width="400" />
+</p>
 
-Google Ads management CLI for AI agents. Works with [OpenClaw](https://openclaw.ai), [Claude](https://claude.ai/claude-code), and any agent that can run shell commands.
+<p align="center">
+  Google Ads management CLI for AI agents.<br/>
+  Works with <a href="https://openclaw.ai">OpenClaw</a>, <a href="https://claude.ai/claude-code">Claude</a>, and any agent that can run shell commands.
+</p>
+
+---
 
 ```bash
 npm install -g fullrun
