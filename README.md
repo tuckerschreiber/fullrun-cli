@@ -9,23 +9,24 @@
 
 ---
 
+[Fullrun](https://www.fullrun.app) is an AI agent that manages Google Ads for you. It monitors your campaigns around the clock, diagnoses problems, adjusts bids, adds missing ad extensions, pauses wasteful keywords, and creates new campaigns — all autonomously.
+
+This CLI brings that same engine to your terminal. Instead of using the Fullrun dashboard, you (or your AI agent) can manage Google Ads with simple commands. Every command auto-detects your environment — colored output in a terminal, structured JSON when piped to another program.
+
 ```bash
 npm install -g fullrun
 fullrun login frun_YOUR_API_KEY
 fullrun triage
 ```
 
-## What it does
+### What an agent can do
 
-Fullrun gives AI agents (and humans) a command-line interface to manage Google Ads campaigns. Every command returns structured JSON when piped, and human-readable colored output in a terminal.
+1. **Diagnose** — Run `fullrun triage` to get a prioritized health report (CRITICAL → HIGH → MEDIUM → LOW)
+2. **Inspect** — List campaigns, keywords, and performance metrics
+3. **Optimize** — Trigger `fullrun run` to let the AI agent fix the highest-priority issues
+4. **Repeat** — Triage again to confirm the fixes worked
 
-An agent can autonomously:
-
-1. **Diagnose** account health with `fullrun triage`
-2. **Inspect** campaigns, keywords, and performance metrics
-3. **Fix** issues by triggering an AI-powered optimization run
-
-All business logic, guardrails, and Google Ads API calls happen server-side. The CLI is a thin client — no credentials on your machine.
+All the hard stuff — Google Ads API calls, bid calculations, budget guardrails, PPC best practices — happens server-side. The CLI is a thin client. No credentials stored on your machine.
 
 ## Commands
 
