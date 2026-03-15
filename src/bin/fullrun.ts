@@ -24,33 +24,33 @@ program
 program
   .command("triage")
   .description("Diagnose account health — returns prioritized issues")
-  .option("--format <format>", "Output format: human (default) or json", "human")
+  .option("--format <format>", "Output format: auto (default), human, or json", "auto")
   .action(triage);
 
 program
   .command("campaigns:list")
   .description("List all campaigns with metrics")
-  .option("--format <format>", "Output format: human or json", "human")
+  .option("--format <format>", "Output format: auto (default), human, or json", "auto")
   .action(listCampaigns);
 
 program
   .command("performance")
   .description("Get account performance metrics")
   .option("--days <days>", "Number of days to look back", "7")
-  .option("--format <format>", "Output format: human or json", "human")
+  .option("--format <format>", "Output format: auto (default), human, or json", "auto")
   .action(performance);
 
 program
   .command("keywords:list")
   .description("List keywords with performance data")
   .option("--campaign <id>", "Filter by campaign ID")
-  .option("--format <format>", "Output format: human or json", "human")
+  .option("--format <format>", "Output format: auto (default), human, or json", "auto")
   .action(listKeywords);
 
 program
   .command("run")
   .description("Trigger a full agent optimization run")
-  .option("--format <format>", "Output format: human or json", "human")
+  .option("--format <format>", "Output format: auto (default), human, or json", "auto")
   .action(run);
 
 program.parse();

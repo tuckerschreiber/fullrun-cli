@@ -257,7 +257,10 @@ function formatGeneric(data: any): string {
 type CommandType = "triage" | "campaigns" | "performance" | "keywords" | "run" | "generic";
 
 export function output(data: any, format: string, command: CommandType = "generic"): void {
-  if (format === "json") {
+  // Auto-detect: if format wasn't explicitly set and stdout isn't a TTY, use JSON
+  const useJson = format === "json" || (format === "auto" && !process.stdout.isTTY);
+
+  if (useJson) {
     console.log(JSON.stringify(data));
     return;
   }
