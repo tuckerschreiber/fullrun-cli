@@ -1,11 +1,11 @@
 {
   "name": "@fullrun/mcp",
   "version": "0.1.0",
-  "description": "Fullrun MCP server — Google Ads management for Claude Desktop",
+  "description": "Fullrun MCP server — Google Ads management for Claude Desktop, Cursor, and AI agents",
   "bin": {
     "fullrun-mcp": "./dist/server.js"
   },
-  "files": ["dist"],
+  "files": ["dist", "README.md"],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/server.ts"
@@ -18,5 +18,30 @@
     "@types/node": "^20",
     "tsx": "^4.21.0",
     "typescript": "^5"
-  }
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuckerschreiber/fullrun-cli.git",
+    "directory": "mcp"
+  },
+  "homepage": "https://www.fullrun.app/cli",
+  "bugs": {
+    "url": "https://github.com/tuckerschreiber/fullrun-cli/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google-ads",
+    "ppc",
+    "ai-agent",
+    "claude-desktop",
+    "cursor",
+    "advertising",
+    "sem",
+    "fullrun"
+  ]
 }
