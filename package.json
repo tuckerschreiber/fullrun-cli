@@ -1,0 +1,26 @@
+{
+  "name": "fullrun",
+  "version": "0.1.0",
+  "description": "Google Ads management CLI for AI agents",
+  "bin": {
+    "fullrun": "./dist/bin/fullrun.js"
+  },
+  "files": ["dist", "SKILL.md"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/bin/fullrun.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "open": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "vitest": "^4.0.18"
+  },
+  "keywords": ["google-ads", "ppc", "ai-agent", "openclaw", "mcp", "cli"],
+  "license": "MIT"
+}
