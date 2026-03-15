@@ -13,6 +13,8 @@
 
 This CLI brings that same engine to your terminal. Instead of using the Fullrun dashboard, you (or your AI agent) can manage Google Ads with simple commands. Every command auto-detects your environment — colored output in a terminal, structured JSON when piped to another program.
 
+[![Fullrun — Google Ads for AI Agents MCP server](https://glama.ai/mcp/servers/tuckerschreiber/fullrun-cli/badges/card.svg)](https://glama.ai/mcp/servers/tuckerschreiber/fullrun-cli)
+
 ```bash
 npm install -g fullrun
 fullrun login frun_YOUR_API_KEY
