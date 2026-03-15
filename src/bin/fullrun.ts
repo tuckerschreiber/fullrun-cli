@@ -24,33 +24,33 @@ program
 program
   .command("triage")
   .description("Diagnose account health — returns prioritized issues")
-  .option("--format <format>", "Output format: json (default) or human", "json")
+  .option("--format <format>", "Output format: human (default) or json", "human")
   .action(triage);
 
 program
   .command("campaigns:list")
   .description("List all campaigns with metrics")
-  .option("--format <format>", "Output format: json or human", "json")
+  .option("--format <format>", "Output format: human or json", "human")
   .action(listCampaigns);
 
 program
   .command("performance")
   .description("Get account performance metrics")
   .option("--days <days>", "Number of days to look back", "7")
-  .option("--format <format>", "Output format: json or human", "json")
+  .option("--format <format>", "Output format: human or json", "human")
   .action(performance);
 
 program
   .command("keywords:list")
   .description("List keywords with performance data")
   .option("--campaign <id>", "Filter by campaign ID")
-  .option("--format <format>", "Output format: json or human", "json")
+  .option("--format <format>", "Output format: human or json", "human")
   .action(listKeywords);
 
 program
   .command("run")
   .description("Trigger a full agent optimization run")
-  .option("--format <format>", "Output format: json or human", "json")
+  .option("--format <format>", "Output format: human or json", "human")
   .action(run);
 
 program.parse();
