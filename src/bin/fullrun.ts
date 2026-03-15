@@ -18,7 +18,7 @@ program
   .command("login")
   .description("Authenticate with your Fullrun API key")
   .argument("<api-key>", "Your API key (frun_...)")
-  .option("--url <url>", "API base URL", "https://fullrun.app")
+  .option("--url <url>", "API base URL", "https://www.fullrun.app")
   .action(login);
 
 program
