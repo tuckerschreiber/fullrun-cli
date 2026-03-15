@@ -1,7 +1,7 @@
 import { saveConfig } from "../client";
 
 export async function login(apiKey: string, opts: { url?: string }): Promise<void> {
-  const apiUrl = opts.url || "https://www.usefullrun.com";
+  const apiUrl = opts.url || "https://fullrun.app";
 
   saveConfig({ apiKey, apiUrl });
 

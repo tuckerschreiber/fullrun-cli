@@ -15,7 +15,7 @@ export function getConfig(): Config {
   if (process.env.FULLRUN_API_KEY) {
     return {
       apiKey: process.env.FULLRUN_API_KEY,
-      apiUrl: process.env.FULLRUN_API_URL || "https://www.usefullrun.com",
+      apiUrl: process.env.FULLRUN_API_URL || "https://fullrun.app",
     };
   }
 
@@ -27,7 +27,7 @@ export function getConfig(): Config {
 
   return {
     apiKey: config.apiKey,
-    apiUrl: config.apiUrl || "https://www.usefullrun.com",
+    apiUrl: config.apiUrl || "https://fullrun.app",
   };
 }
 
