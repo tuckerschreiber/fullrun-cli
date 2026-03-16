@@ -1,11 +1,12 @@
 {
   "name": "@fullrun/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fullrun MCP server — Google Ads management for Claude Desktop, Cursor, and AI agents",
+  "mcpName": "io.github.tuckerschreiber/fullrun",
   "bin": {
     "fullrun-mcp": "./dist/server.js"
   },
-  "files": ["dist", "README.md"],
+  "files": ["dist", "README.md", "server.json"],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/server.ts"
