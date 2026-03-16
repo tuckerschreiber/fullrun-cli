@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tuckerschreiber/fullrun",
+  "description": "Google Ads AI agent for Claude Desktop, Cursor, and AI agents. Diagnose account health, list campaigns, get performance metrics, manage keywords, and run AI-powered optimizations.",
+  "repository": {
+    "url": "https://github.com/tuckerschreiber/fullrun-cli",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@fullrun/mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your Fullrun API key for authenticating with the Fullrun API",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "FULLRUN_API_KEY"
+        }
+      ]
+    }
+  ]
+}

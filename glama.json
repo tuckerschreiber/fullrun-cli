@@ -1,4 +1,11 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "@fullrun/mcp",
+  "display_name": "Fullrun — Google Ads for AI Agents",
+  "description": "Manage Google Ads campaigns from Claude Desktop, Cursor, and other AI agents. Diagnose account health, view performance metrics, and trigger AI-powered optimizations.",
+  "repository": "https://github.com/tuckerschreiber/fullrun-cli",
+  "homepage": "https://www.fullrun.app/cli",
+  "license": "MIT",
+  "categories": ["advertising", "marketing", "google-ads"],
   "maintainers": ["tuckerschreiber"]
 }
